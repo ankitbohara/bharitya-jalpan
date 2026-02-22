@@ -34,6 +34,6 @@ Update `src/data.ts` with real business details:
 - `swiggyUrl`
 - address/phone/email
 
-
-### Workflow note
-- GitHub Actions workflow uses `npm install` (not `npm ci`) so deployment works even without a committed lockfile.
+## Workflow note
+- GitHub Actions uses `npm install` (not `npm ci`) so deployment works without a committed lockfile.
+- Node cache is intentionally disabled in CI because setup-node npm cache mode requires a lockfile (`package-lock.json`).
