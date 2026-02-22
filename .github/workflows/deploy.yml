@@ -25,6 +25,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          # Do not enable `cache: npm` here because setup-node requires a lockfile for cache mode.
+          # This repository intentionally builds without a committed package-lock.json.
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
