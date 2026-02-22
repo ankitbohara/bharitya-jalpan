@@ -1,6 +1,7 @@
 # Bhartiya Jalpan Website (React + TypeScript)
 
 Modern multi-page sweets shop website with pages:
+Modern multi-page sweets shop website with the following pages:
 - Home
 - About Us
 - Our Sweets
@@ -28,8 +29,14 @@ Your live URL will be:
 
 ## Content customization
 Update `src/data.ts` with real business details:
+> If package installation is blocked in your environment, run these commands on a machine with npm registry access.
+
+## Map location images
+Update `src/data.ts` with your real map/photo details:
 - `mapEmbedUrl`
 - `galleryImages[]`
 - `zomatoUrl`
 - `swiggyUrl`
 - address/phone/email
+
+You can use your Google Maps business photos or your own uploaded image URLs.
