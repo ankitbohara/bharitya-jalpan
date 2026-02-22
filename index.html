@@ -8,8 +8,22 @@
       name="description"
       content="Bhartiya Jalpan - Traditional Indian sweets and snacks crafted with pure ingredients."
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              saffron: "#f97316",
+              marigold: "#fb923c",
+              rosemilk: "#fff7ed"
+            }
+          }
+        }
+      };
+    </script>
   </head>
-  <body>
+  <body class="bg-rosemilk text-slate-800">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
