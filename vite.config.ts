@@ -7,6 +7,4 @@ const githubPagesBase = repositoryName ? `/${repositoryName}/` : "/";
 export default defineConfig({
   plugins: [react()],
   base: process.env.GITHUB_ACTIONS ? githubPagesBase : "/",
-export default defineConfig({
-  plugins: [react()],
 });
