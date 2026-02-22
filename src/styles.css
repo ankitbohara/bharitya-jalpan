@@ -1,0 +1,72 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #111827;
+  background: #fff7ed;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; text-decoration: none; }
+
+.navbar-wrap {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+  background: #fffbebcc;
+  border-bottom: 1px solid #fed7aa;
+}
+
+.navbar {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand { font-weight: 800; color: #b45309; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 1rem; }
+.nav-links a { padding: 0.45rem 0.7rem; border-radius: 999px; }
+.nav-links a.active, .nav-links a:hover { background: #fdba74; }
+
+.container { max-width: 1080px; margin: 0 auto; padding: 1.25rem; min-height: calc(100vh - 144px); }
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.hero img, .card img { width: 100%; border-radius: 16px; object-fit: cover; }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; color: #9a3412; }
+h1 { margin: 0.25rem 0; font-size: clamp(2rem, 4vw, 3rem); }
+.tagline { font-size: 1.2rem; color: #b45309; font-weight: 700; }
+
+.section-title { margin-bottom: 1rem; }
+.grid { display: grid; gap: 1rem; }
+.gallery-grid, .sweets-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.contact-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+
+.card {
+  background: #ffffff;
+  border: 1px solid #fed7aa;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 10px 30px #ea580c14;
+}
+
+.sweet-item { text-align: center; }
+.page-intro, .small-note { color: #6b7280; }
+.about-copy p { margin-bottom: 1rem; }
+
+.order-card { text-align: center; }
+.button-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 1.25rem 0; }
+.btn { padding: 0.75rem 1rem; color: #fff; border-radius: 10px; font-weight: 700; }
+.btn-zomato { background: #e23744; }
+.btn-swiggy { background: #fc8019; }
+
+.map-card iframe { border: 0; width: 100%; min-height: 280px; border-radius: 12px; }
+.footer { text-align: center; padding: 1rem; color: #9a3412; border-top: 1px solid #fed7aa; }
